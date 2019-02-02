@@ -65,6 +65,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-oe-3YC">
                                                 <rect key="frame" x="71.5" y="78.5" width="192" height="40"/>
                                                 <state key="normal" image="binge-btn"/>
+                                                <connections>
+                                                    <action selector="randomBingeShowBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYi-ld-fIP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

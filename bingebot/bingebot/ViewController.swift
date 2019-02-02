@@ -27,6 +27,12 @@ class ViewController: UIViewController {
         randomShowStackView.isHidden = true
     }
     
+    @IBAction func randomBingeShowBtnWasPressed(_ sender: Any) {
+        randomShowLabel.text = shows.randomElement()
+        randomShowLabel.isHidden = false
+        bingebotSpokenLabel.isHidden = false
+    }
+    
     func updateShowsLabel() {
         showsLabel.text = shows.joined(separator: ", ")
     }
