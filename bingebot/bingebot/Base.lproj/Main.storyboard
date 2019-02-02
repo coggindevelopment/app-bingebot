@@ -81,6 +81,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDS-yP-Df0">
                                                 <rect key="frame" x="0.0" y="33" width="335" height="40"/>
                                                 <state key="normal" image="add-show-btn"/>
+                                                <connections>
+                                                    <action selector="addShowBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7UC-WW-wmZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -104,6 +107,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addShowBtn" destination="lDS-yP-Df0" id="orf-Ke-1hI"/>
+                        <outlet property="addShowStackView" destination="tdN-LJ-4ln" id="0e0-bZ-JKD"/>
+                        <outlet property="addShowTextField" destination="iQd-IL-YZO" id="v4l-yL-VYa"/>
+                        <outlet property="bingebotSpokenLabel" destination="T3x-Hi-WVb" id="4HD-yI-opk"/>
+                        <outlet property="randomShowLabel" destination="nlP-DI-cIB" id="ViD-TL-I8I"/>
+                        <outlet property="randomShowStackView" destination="vNY-k5-gw0" id="HZx-vz-y8q"/>
+                        <outlet property="showsLabel" destination="0kj-da-NOj" id="zWM-av-R27"/>
+                        <outlet property="showsStackView" destination="uQO-fv-74X" id="Pxm-MP-ua6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
