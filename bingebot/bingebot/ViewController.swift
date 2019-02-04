@@ -39,15 +39,19 @@ class ViewController: UIViewController {
 
     @IBAction func addShowBtnWasPressed(_ sender: Any) {
         guard let showName = addShowTextField.text else { return }
-        shows.append(showName)
-        updateShowsLabel()
-        addShowTextField.text = ""
-        showsStackView.isHidden = false
-        
-        if shows.count > 1 {
-            randomShowStackView.isHidden = false
-            bingebotSpokenLabel.isHidden = true
-            randomShowLabel.isHidden = true
+        if showName == "" {
+            print("Do nothing.")
+        } else {
+            shows.append(showName)
+            updateShowsLabel()
+            addShowTextField.text = ""
+            showsStackView.isHidden = false
+            
+            if shows.count > 1 {
+                randomShowStackView.isHidden = false
+                bingebotSpokenLabel.isHidden = true
+                randomShowLabel.isHidden = true
+            }
         }
     }
 }
